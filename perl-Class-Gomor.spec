@@ -2,7 +2,7 @@
 
 Summary:	Class::Gomor - another class and object builder
 Name:		perl-%{module}
-Version:	1.00
+Version:	1.01
 Release:	%mkrel 1
 License:	Artistic
 Group:		Development/Perl
@@ -17,7 +17,6 @@ This module is yet another class builder. This one adds parameter checking in
 new constructor, that is to check for attributes existence, and definedness.
 
 %prep
-
 %setup -q -n %{module}-%{version} 
 
 %build
