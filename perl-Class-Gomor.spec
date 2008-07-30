@@ -3,7 +3,7 @@
 Summary:	Class::Gomor - another class and object builder
 Name:		perl-%{module}
 Version:	1.01
-Release:	%mkrel 1
+Release:	%mkrel 3
 License:	Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
