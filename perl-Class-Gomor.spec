@@ -3,7 +3,7 @@
 Summary:	Class::Gomor - another class and object builder
 Name:		perl-%{module}
 Version:	1.01
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
@@ -11,6 +11,9 @@ Source0:	http://search.cpan.org/CPAN/authors/id/G/GO/GOMOR/%{module}-%{version}.
 BuildRequires:	perl-devel
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+
+Obsoletes:  perl-Class-Gomor-Hash
+Provides:   perl-Class-Gomor-Hash
 
 %description
 This module is yet another class builder. This one adds parameter checking in
