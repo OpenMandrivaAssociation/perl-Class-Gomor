@@ -8,7 +8,7 @@ Release:	5
 Summary:	Class::Gomor - another class and object builder
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/G/GO/GOMOR/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
