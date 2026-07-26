@@ -1,15 +1,13 @@
 %define upstream_name    Class-Gomor
-%define upstream_version 1.02
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	1.02
+Release:	6
 
 Summary:	Class::Gomor - another class and object builder
 License:	Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/G/GO/GOMOR/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/G/GO/GOMOR/%{upstream_name}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ This module is yet another class builder. This one adds parameter checking in
 new constructor, that is to check for attributes existence, and definedness.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -47,9 +45,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.20.0-1mdv2011.0
 + Revision: 403013
-- rebuild using %%perl_convert_version
-
-* Sun May 24 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.02-1mdv2010.0
+- rebuild using %1.02 Sun May 24 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.02-1mdv2010.0
 + Revision: 379209
 - update to new version 1.02
 
